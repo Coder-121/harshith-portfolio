@@ -6,69 +6,103 @@
   <title>FrameCulture</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <!-- NAVBAR -->
-<nav>
-  <h2>FrameCulture </h2>
-  <ul>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
+<nav class="navbar">
+  <h1 class="logo">FrameCulture</h1>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
+  <video autoplay muted loop class="bg-video">
+    <source src="video/bg.mp4" type="video/mp4">
+  </video>
 
-    <!-- Video -->
-    <video autoplay muted loop id="bg-video">
-        <source src="video/bg.mp4" type="video/mp4">
-    </video>
+  <div class="overlay"></div>
 
-    <!-- TEXT CONTENT -->
-    <div class="hero-content">
-        <h1>Capturing Colours Through Lens</h1>
-        <p>Photography & Videography</p>
-        <a href="#portfolio" class="btn">View Work</a>
-    </div>
-
+  <div class="hero-content">
+    <h1 class="hero-text">Capturing Colours Through Lens</h1>
+    <p>Photography & Videography</p>
+    <button class="btn">View Work</button>
+  </div>
 </section>
 
 <!-- PORTFOLIO -->
-<section id="portfolio" class="portfolio">
-  <h2>Portfolio</h2>
-  <div class="gallery">
-    <img src="images/1.jpg">
-    <img src="images/2.jpg">
-    <img src="images/3.jpg">
-    <img src="images/4.jpg">
-    <img src="images/5.jpg">
-    <img src="images/6.jpg">
+<section class="portfolio">
+  <h2>My Work</h2>
+
+  <div class="grid">
+    <div class="item"><img src="images/img1.jpg"></div>
+    <div class="item"><img src="images/img2.jpg"></div>
+    <div class="item"><img src="images/img3.jpg"></div>
+    <div class="item"><img src="images/img4.jpg"></div>
+    <div class="item"><img src="images/img5.jpg"></div>
+    <div class="item"><img src="images/img6.jpg"></div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="about section">
-    <h2>About Me</h2>
-    <p>
-        I'm Harshith, a passionate photographer and videographer capturing cinematic moments,
-        food, and creative visuals. My goal is to turn moments into timeless stories.
-    </p>
+<section class="about">
+  <h2>About FrameCulture</h2>
+  <p>We capture moments that tell stories. From food photography to cinematic videography, we elevate brands.</p>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>Services</h2>
+
+  <div class="service-grid">
+    <div class="card">
+      <h3>Food Photography</h3>
+      <p>High-quality visuals for restaurants</p>
+      <span>₹3,000</span>
+    </div>
+
+    <div class="card">
+      <h3>Reels</h3>
+      <p>Instagram-ready cinematic reels</p>
+      <span>₹5,000</span>
+    </div>
+
+    <div class="card">
+      <h3>Events</h3>
+      <p>Professional event coverage</p>
+      <span>₹8,000+</span>
+    </div>
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact section">
-    <h2>Contact</h2>
-    <p>Email: harshith.patel00@gmail.com</p>
-    <p>Phone: +91 6361841782</p>
-    <p>Instagram: @harryishighhhh</p>
+<section class="contact">
+  <h2>Book a Shoot</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Requirement"></textarea>
+    <button type="submit">Send Inquiry</button>
+  </form>
 </section>
 
-<footer> </footer>-->
-  <p>© 2026 FrameCulture</p>
+<!-- WHATSAPP -->
+<a href="https://wa.me/916361841782" class="whatsapp">Chat</a>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>©️ 2026 FrameCulture</p>
 </footer>
 
 </body>
 <script src="script.js"></script>
+</body>
 </html>
